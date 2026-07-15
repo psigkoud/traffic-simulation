@@ -1,0 +1,10 @@
+```text
+__pycache__/
+*.pyc
+.env
+venv/
+env/
+.DS_Store
+results/
+detailed/
+simulation_results.csv
