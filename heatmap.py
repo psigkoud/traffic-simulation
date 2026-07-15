@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 # Method and criterion names (without delay)
 methods = [
@@ -53,5 +54,6 @@ for spine in ax.spines.values():
     spine.set_color('white')
 
 plt.tight_layout()
-plt.savefig("heatmap_no_delay.png", dpi=300, facecolor='black')
+os.makedirs('results', exist_ok=True)
+plt.savefig("results/heatmap_no_delay.png", dpi=300, facecolor='black')
 plt.show()

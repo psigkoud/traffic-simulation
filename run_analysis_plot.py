@@ -85,7 +85,8 @@ for spine in ax.spines.values():
 
 plt.subplots_adjust(bottom=0.20)
 plt.tight_layout()
-plt.savefig('avg_delay_per_method_with_runs.png', dpi=300, facecolor='black')
+os.makedirs('results', exist_ok=True)
+plt.savefig('results/avg_delay_per_method_with_runs.png', dpi=300, facecolor='black')
 plt.close()
 
 print("Run analysis plot successfully created and saved.")
